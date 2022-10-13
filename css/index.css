@@ -1,0 +1,86 @@
+
+.border-icon{
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    transition: all .3s ease-in;
+    color: white;
+}
+
+header{
+    background-color: CornflowerBlue;
+    grid-area: header;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+}
+.mifoto{
+    height: 200px;
+    width: 200px;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    padding-right: 5px;
+}
+.infoC{
+    grid-area: info;
+    background-color: cornflowerblue;
+    padding: 20px;
+}
+
+.estudios{
+    grid-area: estudios;
+}
+
+.formacionAdicional{
+    grid-area: cursos;
+    padding: 10px;
+}
+
+.intereses{
+    grid-area: hobbies;
+}
+
+.extracurriculares{
+    grid-area: extra;
+}
+
+.tel{
+    display: flex;
+    align-items: baseline;
+    color: white;
+    font-weight: bold;
+}
+.mail{
+    display: flex;
+    align-items: baseline;
+    color: white;
+    font-weight: bold;
+}
+.ubicacion{
+    display: flex;
+    align-items: baseline;
+    color: white;
+    font-weight: bold;
+}
+.separador{
+    color: steelblue;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header header header info info"
+    ". estudios estudios estudios ."
+    ". cursos cursos cursos ."
+    ". hobbies hobbies hobbies ."
+    ". extra extra extra .";
+}
